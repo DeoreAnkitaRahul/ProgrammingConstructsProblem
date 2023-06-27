@@ -8,33 +8,34 @@ namespace ProgrammingConstructsCW
 {
     public class CheckEquality
     {
-        public int num_one, num_two, num_three;
-        public void CompareNumber()
+        public int num;
+        public void WeekDayNumber()
         {
-            Console.Write("Enter 1st number: ");
-            num_one = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter 2nd number: ");
-            num_two = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter 3rd number: ");
-            num_three = Convert.ToInt32(Console.ReadLine());
-            if (num_one > num_two)
+            Console.Write("Enter the number (1-7): ");
+            num = Convert.ToInt32(Console.ReadLine());
+            switch (num)
             {
-                if (num_one > num_three)
-                {
-                    Console.Write("Number one is the largest");
-                }
-                else
-                {
-                    Console.Write("Number three is the largest");
-                }
-            }
-            else if (num_two > num_three)
-            {
-                Console.Write("Number two is the largest");
-            }
-            else
-            {
-                Console.Write("Number three is the largest");
+                case 1:
+                    Console.WriteLine("SUNDAY");
+                    break;
+                case 2:
+                    Console.WriteLine("MONDAY");
+                    break;
+                case 3:
+                    Console.WriteLine("TUESDAY");
+                    break;
+                case 4:
+                    Console.WriteLine("WEDNESDAY");
+                    break;
+                case 5:
+                    Console.WriteLine("THURSDAY");
+                    break;
+                case 6:
+                    Console.WriteLine("FRIDAY");
+                    break;
+                case 7:
+                    Console.WriteLine("SATURDAY");
+                    break;
             }
         }
     }
