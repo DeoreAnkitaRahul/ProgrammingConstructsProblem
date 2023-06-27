@@ -8,20 +8,18 @@ namespace ProgrammingConstructsCW
 {
     public class CheckEquality
     {
-        public int num_One, num_Two;
-        public void CompareNumbers()
+        public int num;
+        public void CheckNo()
         {
-            Console.Write("Enter first integer: ");
-            num_One = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter second integer: ");
-            num_Two = Convert.ToInt32(Console.ReadLine());
-            if (num_One == num_Two)
+            Console.Write("Enter any integer: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
             {
-                Console.WriteLine("Both integers are equal");
+                Console.WriteLine("Given integer is even");
             }
             else
             {
-                Console.WriteLine("Both integers are not equal");
+                Console.WriteLine("Given integer is odd");
             }
         }
     }
