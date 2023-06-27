@@ -8,18 +8,34 @@ namespace ProgrammingConstructsCW
 {
     public class CheckEquality
     {
-        public int Age;
-        public void CheckEligibility()
+        public int num_one, num_two, num_three;
+        public void CompareNumber()
         {
-            Console.Write("Enter your age: ");
-            Age = Convert.ToInt32(Console.ReadLine());
-            if (Age >= 18)
+            Console.Write("Enter 1st number: ");
+            num_one = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter 2nd number: ");
+            num_two = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter 3rd number: ");
+            num_three = Convert.ToInt32(Console.ReadLine());
+            if (num_one > num_two)
             {
-                Console.WriteLine("You are eligible to vote");
+                if (num_one > num_three)
+                {
+                    Console.Write("Number one is the largest");
+                }
+                else
+                {
+                    Console.Write("Number three is the largest");
+                }
+            }
+            else if (num_two > num_three)
+            {
+                Console.Write("Number two is the largest");
             }
             else
             {
-                Console.WriteLine("You are not eligible to vote");
+                Console.Write("Number three is the largest");
             }
         }
+    }
 }
