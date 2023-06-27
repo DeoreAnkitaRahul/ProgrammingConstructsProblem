@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             CheckEquality obj = new CheckEquality();
-            obj.CheckNo();
+            obj.CheckEligibility();
             Console.ReadLine();
         }
     }

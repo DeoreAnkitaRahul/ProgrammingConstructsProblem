@@ -8,19 +8,18 @@ namespace ProgrammingConstructsCW
 {
     public class CheckEquality
     {
-        public int num;
-        public void CheckNo()
+        public int Age;
+        public void CheckEligibility()
         {
-            Console.Write("Enter any integer: ");
-            num = Convert.ToInt32(Console.ReadLine());
-            if (num % 2 == 0)
+            Console.Write("Enter your age: ");
+            Age = Convert.ToInt32(Console.ReadLine());
+            if (Age >= 18)
             {
-                Console.WriteLine("Given integer is even");
+                Console.WriteLine("You are eligible to vote");
             }
             else
             {
-                Console.WriteLine("Given integer is odd");
+                Console.WriteLine("You are not eligible to vote");
             }
         }
-    }
 }
